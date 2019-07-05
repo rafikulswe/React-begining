@@ -4,7 +4,11 @@ class First extends Component{
 
     render(){
         return (
-            <h1>Hello {this.props.name}, I know your email {this.props.email}. <br></br> I am your first component.</h1>
+            <div>
+                <h1>Hello {this.props.name} ! <br></br></h1>
+                <p>I know your email {this.props.email}.</p>
+                <p>I am your first component.</p>
+            </div>
         ) 
     }
     

@@ -42,6 +42,7 @@ class Counter extends Component{
         return(
             <div>
                 <h1 style={{color: this.state.color}}>
+                    Let's Have Game!! <br></br>
                     <button onClick={this.decrease}><span>--</span></button>
                     <span>{this.state.countValue}</span>
                     <button onClick={this.increase}><span>++</span></button>
