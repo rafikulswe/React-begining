@@ -3,6 +3,7 @@ import logo from '../logo.svg';
 import './App.css';
 import First from './FirstCom/First'
 import Counter from './FirstCom/Counter'
+import EventHandler from './FirstCom/EventHandler'
 
 class App extends Component {
   state = {
@@ -30,6 +31,7 @@ class App extends Component {
                   />
         }) }
         <Counter/>
+        <EventHandler/>
     </div>
   );
  }
