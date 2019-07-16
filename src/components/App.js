@@ -4,6 +4,7 @@ import './App.css';
 import First from './FirstCom/First'
 import Counter from './FirstCom/Counter'
 import EventHandler from './FirstCom/EventHandler'
+import Stateless from './FirstCom/Stateless'
 
 class App extends Component {
   state = {
@@ -17,7 +18,6 @@ class App extends Component {
     <div className="App">
         {/* direct way without state */}
         <First name='Rezanul Hoque' email='reza@gmail.com'/>
-
         {/* way to using state */}
         {/* <First name={this.state.users[1].name} email={this.state.users[1].email}/>
         <First name={this.state.users[1].name} email={this.state.users[1].email}/> */}
@@ -32,6 +32,7 @@ class App extends Component {
         }) }
         <Counter/>
         <EventHandler/>
+        <Stateless name="stateless"/>
     </div>
   );
  }

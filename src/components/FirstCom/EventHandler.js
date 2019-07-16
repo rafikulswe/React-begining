@@ -12,6 +12,7 @@ class EventHandler extends Component{
     render(){
         return(
             <div className="container">
+                {this.state.username ? <p>Hi Mr. {this.state.username}</p> : ""}
                 <form action="#">
                     <div className="form-group">
                         <label htmlFor="username">Name</label>
@@ -19,7 +20,6 @@ class EventHandler extends Component{
                     </div>
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
-                {this.state.username ? <p>Hi Mr. {this.state.username}</p> : ""}
             </div>
         )
     }
