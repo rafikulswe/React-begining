@@ -6,6 +6,24 @@ import Counter from './FirstCom/Counter'
 import EventHandler from './FirstCom/EventHandler'
 import Stateless from './FirstCom/Stateless'
 
+const newElement = (
+    <div className="row" style={{float:"left", padding: "10px 10px"}}>
+      <div className="col-md-6">
+        <div className="form-group">
+            <label htmlFor="username">Name</label>
+            <input type="text" id="username"/>
+        </div>
+        <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input type="text" id="email"/>
+        </div>
+      </div>
+    </div>
+)
+
+function Welcome(props) {
+    return <h1>Hello {props.name}</h1>
+}
 class App extends Component {
   state = {
     users: [
@@ -16,6 +34,12 @@ class App extends Component {
  render(){
   return (
     <div className="App">
+        <Welcome name="Rafi"/>
+        <div className="row">
+            <div className="col-md-6">
+                {newElement}
+            </div>
+        </div>
         {/* direct way without state */}
         <First name='Rezanul Hoque' email='reza@gmail.com'/>
         {/* way to using state */}
