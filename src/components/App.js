@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import logo from '../logo.svg';
 import './App.css';
-import First from './FirstCom/First'
-import Counter from './FirstCom/Counter'
-import EventHandler from './FirstCom/EventHandler'
-import Stateless from './FirstCom/Stateless'
+import First from './FirstCom/First';
+import Counter from './FirstCom/Counter';
+import EventHandler from './FirstCom/EventHandler';
+import Stateless from './FirstCom/Stateless';
+import DataList from './FirstCom/DataList';
 
 const newElement = (
     <div className="row" style={{float:"left", padding: "10px 10px"}}>
@@ -34,6 +35,7 @@ class App extends Component {
  render(){
   return (
     <div className="App">
+        <DataList/>
         <Welcome name="Rafi"/>
         <div className="row">
             <div className="col-md-6">
